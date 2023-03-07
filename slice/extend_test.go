@@ -26,3 +26,7 @@ func BenchmarkCopyByBuiltIn(b *testing.B) {
 		CopyByBuiltIn(s)
 	}
 }
+
+func TestMyTest(t *testing.T) {
+	MyTest()
+}
