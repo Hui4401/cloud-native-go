@@ -13,7 +13,7 @@ func main() {
 	for i := 0; i < 5; i++ {
 		go func(ii int) {
 			time.Sleep(time.Second)
-			fmt.Println("G %d finished", ii)
+			fmt.Printf("G %d finished", ii)
 			// wg.Done()
 			wg.Add(-1) // wg.Done()就是调用了Add(-1)
 		}(i)

@@ -1,4 +1,4 @@
-package panic
+zpackage panic
 
 import "fmt"
 

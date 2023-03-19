@@ -11,3 +11,8 @@ func ExampleLaw3Fail() {
 	// Output:
 	//
 }
+
+func ExampleLaw3Success() {
+	Law3Success()
+	// Output: x = 7.1
+}

@@ -19,7 +19,14 @@ func Law2() {
 
 func Law3Fail() {
 	var x float64 = 3.4
-	v := reflect.ValueOf(&x)
+	v := reflect.ValueOf(x)
 	v.SetFloat(7.1) // Error: will panic.
 	fmt.Printf("x = %f\n", x)
+}
+
+func Law3Success() {
+	var x float64 = 3.4
+	v := reflect.ValueOf(&x)
+	v.Elem().SetFloat(7.1)
+	fmt.Println("x = ", v.Elem().Interface())
 }
